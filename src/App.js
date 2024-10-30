@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Home from "./pages/Home"
-import TypeDoc1 from "./pages/TypeDoc1";
-import TypeDoc2 from "./pages/TypeDoc2";
-import TypeDoc3 from "./pages/TypeDoc3";
+import TypeDoc1 from "./pages/TypeDoc1/PersonalData";
+import TypeDoc2 from "./pages/TypeDoc2/TypeDoc2";
+import TypeDoc3 from "./pages/TypeDoc3/TypeDoc3";
 
 function App() {
   return (

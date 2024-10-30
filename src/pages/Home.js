@@ -26,13 +26,11 @@ function App() {
     {id: 2, name: 'Terreno p/ Construção'},
     {id: 3, name: 'Imóvel Residencial'},
     {id: 4, name: 'Terreno Agrícola'},
-    
   ]
 
   //função para verificar as opções escolhida e onClick
+  //RESOLVER BUG de atualização das opções
   const clickAvancar = () =>{
-
-    
     if(selectValue-1 == 1){
       typeDoc1 = true
     }
@@ -43,10 +41,16 @@ function App() {
       typeDoc3 = true
     }
 
-    //verificar o tipo de documento
-    if(typeDoc1){typeDoc = "/typedoc1"}
-    if(typeDoc2){typeDoc = "/typedoc2"}
-    if(typeDoc3){typeDoc = "/typedoc3"}
+    //verify the document type
+    if(typeDoc1){
+      typeDoc = "/typedoc1"
+    }
+    if(typeDoc2){
+      typeDoc = "/typedoc2"
+    }
+    if(typeDoc3){
+      typeDoc = "/typedoc3"
+    }
 
     /**
      * alert(list[selectValue-1].name)
