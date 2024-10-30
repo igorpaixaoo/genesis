@@ -3,7 +3,7 @@ import React from "react";
 const ButtonDefault = (props) => {
 
     return(
-        <button id={props.id} onClick={props.onClick}>{props.text}</button>
+        <button id={props.id} onClick={props.onClick} disabled={props.disabled}>{props.text}</button>
     ) 
 } 
 
