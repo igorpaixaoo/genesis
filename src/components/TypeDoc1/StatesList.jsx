@@ -1,7 +1,7 @@
 
-const StatesList = () =>{
+const StatesList = (props) =>{
     return(
-        <select id="estado" name="estado">
+        <select id={props.id} name="estado">
             <option value="">Selecione:</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>

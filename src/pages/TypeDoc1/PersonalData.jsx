@@ -7,10 +7,11 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import FormVendedor from "../../components/TypeDoc1/forms/FormVendedor";
 import FormComprador from "../../components/TypeDoc1/forms/FormComprador";
 import ButtonDefault from "../../components/ButtonDefault"
+import Object from "./Object";
 
 //booleans para renderizar cada componente
-var personalDataEnabled = true;
-var objectEnabled = false;
+var personalDataEnabled = false;
+var objectEnabled = true;
 var landValue = false;
 var terms = false;
 var limitsAndConfrontations = false;
@@ -42,7 +43,7 @@ function TypeDoc1() {
             )}
             {objectEnabled && (
                 <div className="object">
-
+                    <Object></Object>
                 </div>
             )}
             {landValue && (
