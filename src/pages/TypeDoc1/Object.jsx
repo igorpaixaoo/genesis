@@ -1,7 +1,7 @@
 
 //components
 import LandMeasurement from "../../components/TypeDoc1/LandMeasurement"
-import StatesList from "../../components/TypeDoc1/StatesList"
+import StatesList from "../../components/StatesList"
 import DocumentTypes from "../../components/DocumentTypes"
 
 const Object = () =>{

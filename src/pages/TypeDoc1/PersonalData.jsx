@@ -7,12 +7,14 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import FormVendedor from "../../components/TypeDoc1/forms/FormVendedor";
 import FormComprador from "../../components/TypeDoc1/forms/FormComprador";
 import ButtonDefault from "../../components/ButtonDefault"
+
 import Object from "./Object";
+import LandValue from "./LandValue";
 
 //booleans para renderizar cada componente
 var personalDataEnabled = false;
-var objectEnabled = true;
-var landValue = false;
+var objectEnabled = false;
+var landValue = true;
 var terms = false;
 var limitsAndConfrontations = false;
 var finalConsiderations = false
@@ -37,8 +39,6 @@ function TypeDoc1() {
                     <FormVendedor></FormVendedor>
                     <br></br>
                     <FormComprador></FormComprador>
-                    <ButtonDefault text="Salvar" id="btn-salvar-typeDoc1" disabled="true"></ButtonDefault>
-                    <ButtonDefault text="Avançar" id="btn-next-typeDoc1" disabled="true"></ButtonDefault>
                 </div>
             )}
             {objectEnabled && (
@@ -48,7 +48,7 @@ function TypeDoc1() {
             )}
             {landValue && (
                 <div className="land-value">
-                    
+                    <LandValue></LandValue>
                 </div>
             )}
             {terms && (

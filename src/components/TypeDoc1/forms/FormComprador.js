@@ -2,9 +2,9 @@
 import { IMaskInput } from "react-imask";
 
 //components util
-import CountrysList from "../CountrysList";
-import IdTypes from "../IdTypes";
-import StatesList from "../StatesList";
+import CountrysList from "../../CountrysList";
+import IdTypes from "../../IdTypes";
+import StatesList from "../../StatesList";
 
 const FormComprador = () =>{
     return(
