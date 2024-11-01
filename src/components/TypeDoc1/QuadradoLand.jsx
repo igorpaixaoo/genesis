@@ -2,7 +2,7 @@
 //utils
 import Quadrado from "../../util/quadrado.png"
 
-//disabilitar quando preencher tudo
+//dsabilitar quando preencher tudo
 
 
 const QuadradoLand = () =>{

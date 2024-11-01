@@ -9,52 +9,19 @@ var typeDoc = ""
 
 function App() {
 
-  const [selectValue, setSelectValue] = useState(1);
-  var obj = []
-
-
-  //booleans states para o item da lista de opções
-  var typeDoc1 = false;
-  var typeDoc2 = false;
-  var typeDoc3 = false;
-
-  /**
-   * lista de opções de documentos
-   */
-  const list = [
-    {id: 1, name: 'Selecione:'},
-    {id: 2, name: 'Terreno p/ Construção'},
-    {id: 3, name: 'Imóvel Residencial'},
-    {id: 4, name: 'Terreno Agrícola'},
-  ]
+  const [selectValue, setSelectValue] = useState(0);
 
   //função para verificar as opções escolhida e onClick
-  //RESOLVER BUG de atualização das opções
-  const clickAvancar = () =>{
-    if(selectValue-1 == 1){
-      typeDoc1 = true
-    }
-    if(selectValue-1 == 2){
-      typeDoc2 = true
-    }
-    if(selectValue-1 == 3){
-      typeDoc3 = true
-    }
-
-    //verify the document type
-    if(typeDoc1){
-      typeDoc = "/typedoc1"
-    }
-    if(typeDoc2){
-      typeDoc = "/typedoc2"
-    }
-    if(typeDoc3){
-      typeDoc = "/typedoc3"
-    }
-
-    /**
-     * alert(list[selectValue-1].name)
-     */ 
+  //RESOLVER BUG de atualização das opções (resolvido)
+  //verify the document type
+  if(selectValue == 1){
+    typeDoc = "/typedoc1"
+  }
+  if(selectValue == 2){
+    typeDoc = "/typedoc2"
+  }
+  if(selectValue == 3){
+    typeDoc = "/typedoc3"
   }
 
   return (
@@ -63,12 +30,13 @@ function App() {
         
       <h1>Tipo de Documento</h1>
       <select id="optionsDocs" value={selectValue} onChange={e => setSelectValue(e.target.value)}>
-        {list.map((item, index) => (
-          <option value={item.id}>{item.name}</option>
-        ))}
+        <option>Selecione:</option>
+        <option value={1}>Terreno p/ Construção</option>
+        <option value={2}>Imóvel Residencial</option>
+        <option value={3}>Terreno Agrícola</option>
       </select>
 
-      <Link to={typeDoc}><ButtonDefault id="btnAvancar" text="Avançar" onClick={clickAvancar}></ButtonDefault></Link>
+      <Link to={typeDoc}><ButtonDefault id="btnAvancar" text="Avançar" ></ButtonDefault></Link>
        
       </header>
     </div>

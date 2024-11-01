@@ -5,7 +5,7 @@ import { useState } from "react";
 import Quadrado from "../../util/quadrado.png"
 
 //components
-import TriangleLand from "../TypeDoc1/TriangleLand"
+import TriangleLand from "./TriangleLand"
 import QuadradoLand from "./QuadradoLand";
 
 //componente para saber as medidas do terreno

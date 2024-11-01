@@ -11,6 +11,7 @@ const LandValue = () =>{
 
     return(
         <div className="land-value">
+            <h1>Valor</h1>
             <input type="text" id="valor-terreno" placeholder="Valor do terreno: R$"></input>
             <PaymentCondition value={optionPaymentCondition} onChange={e => setOptionPaymentCondition(e.target.value)}></PaymentCondition>
 
