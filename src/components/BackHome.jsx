@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom/cjs/react-router-dom.min"
+import { Link } from "react-router-dom"
 
 
 import Logo2 from "../util/logo2.png"

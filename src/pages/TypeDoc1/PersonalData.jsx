@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { IMaskInput } from "react-imask";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom"
 
 //components
 import FormVendedor from "../../components/TypeDoc1/forms/FormVendedor";

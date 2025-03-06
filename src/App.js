@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes , Route, Link } from "react-router-dom";
 
 import Home from "./pages/Home"
 import Options from "./pages/Options";
@@ -9,13 +9,13 @@ import TypeDoc3 from "./pages/TypeDoc3/TypeDoc3";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route exact path="/options" component={Options}></Route>
-        <Route path="/typedoc1" component={TypeDoc1}></Route>
-        <Route path="/typedoc2" component={TypeDoc2}></Route>
-        <Route path="/typedoc3" component={TypeDoc3}></Route>
-      </Switch>
+      <Routes >
+        <Route exact path="/" element={<Home/>}></Route>
+        <Route exact path="/options" element={<Options/>}></Route>
+        <Route path="/typedoc1" element={<TypeDoc1/>}></Route>
+        <Route path="/typedoc2" element={<TypeDoc2/>}></Route>
+        <Route path="/typedoc3" element={<TypeDoc3/>}></Route>
+      </Routes >
     </Router>
   );
 }
