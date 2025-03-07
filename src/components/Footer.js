@@ -5,7 +5,7 @@ import App from "../styles/App.css"
 const Footer = () =>{
     return(
         <footer className="footer">
-            <p>By iCode</p>
+            <span>by iCode</span>
             <p>2025©</p>
         </footer>
     )

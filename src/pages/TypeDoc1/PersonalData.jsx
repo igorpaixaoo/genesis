@@ -13,7 +13,7 @@ import LandValue from "./LandValue";
 import LimitsAndConfrontations from "../../components/TypeDoc1/LimitsAndConfrontations";
 
 //booleans para renderizar cada componente
-var personalDataEnabled = false;
+var personalDataEnabled = true;
 var objectEnabled = false;
 var landValue = false;
 var terms = false;

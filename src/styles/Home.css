@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 .genesis{
     position: absolute;
@@ -11,4 +8,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#btnIniciar{
+    margin-top: 30px;
+    width: 180px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13pt;
+    color: #035e59;
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #02a8a0;
+    background-color: transparent;
+    transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#btnIniciar:hover{
+    border: 1px solid;
+    border-color: #02a8a0;
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #02a8a0;
+    border-radius: 3px;
+}
+
+.footer{
+    color: white;
+
 }

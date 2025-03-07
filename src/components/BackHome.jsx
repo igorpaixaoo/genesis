@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 
 import Logo2 from "../util/logo2.png"
+import style from "../styles/App.css"
 
 const BackHome = () =>{
 

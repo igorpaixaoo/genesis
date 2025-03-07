@@ -1,5 +1,7 @@
 import React from "react";
 
+import App from "../styles/App.css"
+
 const ButtonDefault = (props) => {
 
     return(

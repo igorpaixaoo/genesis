@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <div className='genesis'>
         <img src={Logo1} width="500px"></img>
-        <Link to="/options"><ButtonDefault text="Iniciar"></ButtonDefault></Link>
+        <Link to="/options"><ButtonDefault text="INICIAR" id="btnIniciar"></ButtonDefault></Link>
       </div>
       <Footer/>
     </div>

@@ -1,8 +1,9 @@
-import '../styles/Home.css';
+import '../styles/Options.css';
 import { Link, BrowserRouter } from 'react-router-dom';
 
 import BackHome from '../components/BackHome';
 import ButtonDefault from '../components/ButtonDefault';
+import Footer from '../components/Footer';
 import { useState } from 'react';
 
 //string da route
@@ -25,21 +26,22 @@ const Options = () =>{
     }
 
     return (
-        <div className="options">
+        <div className="app">
             <BackHome></BackHome>
-            <header className="app">
-            
-                <h1>Tipo de Documento</h1>
+
+            <h1>TIPO DE DOCUMENTO</h1>
+            <div className="options">
+
                 <select id="optionsDocs" value={selectValue} onChange={e => setSelectValue(e.target.value)}>
                     <option>Selecione:</option>
                     <option value={1}>Terreno p/ Construção</option>
                     <option value={2}>Imóvel Residencial</option>
                     <option value={3}>Terreno Agrícola</option>
                 </select>
-
                 <Link to={typeDoc}><ButtonDefault id="btnAvancar" text="Avançar" ></ButtonDefault></Link>
             
-            </header>
+            </div>
+            <Footer/>
         </div>
     )
 }
